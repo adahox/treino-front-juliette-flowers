@@ -12,7 +12,7 @@ My develpment can be found [here](http://jullietesflower.olharacessivel.com.br/)
 
 
 # CI/CD
-[![adahox](https://circleci.com/gh/adahox/treino-front-jullietes-flowers.svg?style=shield)](#) 
+[![adahox](https://circleci.com/gh/adahox/treino-front-juliettes-flowers.svg?style=shield)](#) 
 
 # MAINTENCE
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/adahox/treino-front-juliette-flowers?style=for-the-badge)
