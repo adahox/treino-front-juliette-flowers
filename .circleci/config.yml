@@ -29,7 +29,7 @@ jobs:
       - run: npm run build
 
       # Add the server to known hosts
-      - run: ssh-keyscan -H $HOSTGATOR_HOST >> ~/.ssh/known_hosts
+      - run: ssh-keyscan -H $HOST >> ~/.ssh/known_hosts
 
       # Finally, upload your files to server.
       - run: rsync -avce ssh --delete ./dist/ $USER@$HOST:$HOSTGATOR_WORKING_DIRECTORY
