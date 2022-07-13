@@ -8,5 +8,4 @@ before_deploy:
     - ssh-keyscan -H $HOSTGATOR_HOST >> ~/.ssh/known_hosts
     
 deploy:
-  provider: npm
     - rsync -avce ssh --delete ./dist/ $HOSTGATOR_USER@$HOSTGATOR_HOST:$HOSTGATOR_DIR
