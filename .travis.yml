@@ -7,4 +7,5 @@ install:
 before_deploy:
     - ssh-keyscan -H $HOSTGATOR_HOST >> ~/.ssh/known_hosts
 deploy:
-    - rsync -avce ssh --delete ./dist/ $HOSTGATOR_USER@$HOSTGATOR_HOST:$HOSTGATOR_DIR
+  provider: script
+    - bash rsync -avce ssh --delete ./dist/ $HOSTGATOR_USER@$HOSTGATOR_HOST:$HOSTGATOR_DIR
