@@ -10,4 +10,5 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
+  password:  $PASSWORD
   script: rsync -r -avce ssh --delete-after --quiet ./dist/ $HOSTGATOR_USER@$HOSTGATOR_HOST:$HOSTGATOR_DIR
