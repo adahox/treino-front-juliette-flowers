@@ -8,4 +8,5 @@ before_deploy:
     - ssh-keyscan -H $HOSTGATOR_HOST >> ~/.ssh/known_hosts
 deploy:
   provider: script
-  script: rsync -avce ssh --delete ./dist/ $HOSTGATOR_USER@$HOSTGATOR_HOST:$HOSTGATOR_DIR
+  skip_cleanup: true
+  script: rsync -r -avce ssh --delete-after --quiet ./dist/ $HOSTGATOR_USER@$HOSTGATOR_HOST:$HOSTGATOR_DIR
