@@ -1,5 +1,6 @@
 dist: bionic
 language: node_js
+os: macos
 node_js: 16.16
 install:
     - npm install
